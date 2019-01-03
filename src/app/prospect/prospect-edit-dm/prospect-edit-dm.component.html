@@ -1,0 +1,61 @@
+<div class="content">
+  <div class="col-lg-12 control-section" style="width: 30%;margin:0px auto">
+      <div class="content-wrapper" style="margin-bottom: 5px;">
+          <div class="formtitle">
+              <span>Edit Prospect Details</span>
+          </div>
+
+          <form id="formId" [formGroup]="reactForm" #formDir="ngForm" class="form-horizontal" novalidate="">
+
+            <div class="form-group">
+                <ejs-textbox id="check" type="text" formControlName="check" [value] = 'pNameFull' placeholder="Name" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
+                      <div *ngIf="check.errors && check.touched" class="e-error">
+                          This field is required.
+                      </div>
+              </div>
+
+              <div class="form-group">
+                  <ejs-textbox id="email_check" type="email" formControlName="email_check" [value] = 'pEmail' placeholder="Email" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
+                  <div *ngIf="email_check.errors && email_check.touched" class="e-error">
+                          Please enter a valid email address.
+                  </div>
+              </div>
+              <div class="form-group">
+                  <ejs-textbox id="date_check" type="date" formControlName="date_check" [value] = 'pDOB' placeholder="DOB" showClearButton='true' floatLabelType="Allways"></ejs-textbox>
+                  <div *ngIf="date_check.errors && date_check.touched" class="e-error">
+                        Please enter a valid date.
+                      </div>
+              </div>
+
+              <div class="form-group">
+                <ejs-textbox id="address1" formControlName="address1" type="text" [value] = 'pAddr1' placeholder="Address 1" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
+              </div>
+
+              <div class="form-group">
+                  <ejs-textbox id="city" type="text" formControlName="city" [value] = 'pCity' placeholder="City" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
+                  <div *ngIf="city.errors && city.touched" class="e-error">
+                          This field is required.
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <ejs-textbox id="state" type="text" formControlName="state" [value] = 'pState' placeholder="State" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
+                  <div *ngIf="state.errors && state.touched" class="e-error">
+                          This field is required.
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div style="width: 320px;margin:0px auto;height: 100px;padding-top: 5px;">
+                      <div style="display: inline-block;">
+                          <button id="validateSubmit" class="samplebtn e-control e-btn e-info" type="submit" style="height:40px;width: 150px;" data-ripple="true">Save Prospect</button>
+                      </div>
+                      <div style="float: right;">
+                          <button id="resetbtn" class="samplebtn e-control e-btn" type="reset" style="height:40px;width: 150px;" data-ripple="true">Clear</button>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>

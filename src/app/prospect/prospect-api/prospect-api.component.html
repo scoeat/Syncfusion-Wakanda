@@ -1,0 +1,10 @@
+<div class="control-section">
+  <ejs-grid [dataSource]='restdata | async' allowPaging='true' [pageSettings]='pageOptions' allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>
+    <e-columns>
+        <e-column field='nameFull' headerText='Name'></e-column>
+        <e-column field='campaignName' headerText='Campaign'></e-column>
+        <e-column field='segmentDisplayName' headerText='Segment'></e-column>
+        <e-column field='attempts' headerText='Dials' textAlign='Right'></e-column>
+    </e-columns>
+  </ejs-grid>
+</div>

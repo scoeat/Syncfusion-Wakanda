@@ -1,3 +1,5 @@
+ng serve --proxy-config proxy.conf.json
+
 # SyncCli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.

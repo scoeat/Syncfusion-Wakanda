@@ -1,0 +1,31 @@
+<div class="menu-section">
+  <div class="toolbar-menu-control">
+      <button ejs-button cssClass="e-info" id="hamburger" (click)="toggleSidebar()" content="Toggle"></button>
+      <div id="shoppingMenu">
+          <ejs-menu [items]="data" [animationSettings]="animation"></ejs-menu>
+      </div>
+      <button ejs-dropdownbutton id='userDBtn' [items]='userData' content="Andrew"></button>
+      <div id="searchArea" class="e-input-group">
+        <input class="e-input" type="text" placeholder="Search" />
+        <span class="em-icons e-search"></span>
+      </div>
+      <!-- Render the Toolbar Component -->
+      <ejs-toolbar #toolbar (created)="onCreated()">
+          <e-items class="my-toolbar">
+              <e-item [template]='toggleSidebarTemplate'></e-item>
+              <e-item [template]='menuTemplate'></e-item>
+              <e-item [template]='searchTemplate' align='Right'></e-item>
+              <e-item [template]='ddbTemplate' align='Right'></e-item>
+              <e-item prefixIcon='em-icons e-shopping-cart' align='Right'></e-item>
+          </e-items>
+      </ejs-toolbar>
+  </div>
+</div>
+<ejs-sidebar id='default-sidebar' #sidebar [type]='type' [target]='target' [width]='width' [height]='height' [position]='position'>
+    <div class='title-header'>
+        <div style='display:inline-block'> Sidebar</div>
+    <div class='sub-title'>
+        Place your primary content here.
+    </div>
+    </div>
+</ejs-sidebar>

@@ -1,0 +1,54 @@
+    .formtitle {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.70);
+    }
+
+    .e-error,
+    .e-float-text {
+        font-weight: 500;
+    }
+
+    .e-custom-label {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    form {
+        padding-top: 20px;
+        margin-bottom: 45px;
+        border: 1px solid #ccc;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+        border-radius: 5px;
+        background: #f9f9f9;
+    }
+
+    .highcontrast form,
+    .highcontrast .header {
+        color: #fff;
+        background: #000000;
+    }
+
+    .header {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
+
+    .form-horizontal .form-group {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .row {
+        padding-bottom: 30px;
+        padding-top: 25px;
+    }
