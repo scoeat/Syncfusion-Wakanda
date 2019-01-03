@@ -21,7 +21,7 @@
                   </div>
               </div>
               <div class="form-group">
-                  <ejs-textbox id="date_check" type="date" formControlName="date_check" [value] = 'pDOB' placeholder="DOB" showClearButton='true' floatLabelType="Allways"></ejs-textbox>
+                  <ejs-textbox id="date_check" type="text" formControlName="date_check" [value] = 'pDOB' placeholder="DOB" showClearButton='true' floatLabelType="Auto"></ejs-textbox>
                   <div *ngIf="date_check.errors && date_check.touched" class="e-error">
                         Please enter a valid date.
                       </div>

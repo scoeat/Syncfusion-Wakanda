@@ -45,7 +45,7 @@ export class NavBarComponent  {
                           url: '/prospectWakanda'
                         },
                         {
-                          text: 'Prospect-Observable Async Pipe',
+                          text: 'Observable Async Pipe-Virtual Scroll',
                           url: '/prospectObservable'
                         },
                       ]
@@ -56,10 +56,6 @@ export class NavBarComponent  {
                       {
                         text: 'Edit-DataManager',
                         url: '/prospectEditDM'
-                      },
-                      {
-                        text: 'Edit Test',
-                        url: '/prospectEdit'
                       },
                     ]
                 }
